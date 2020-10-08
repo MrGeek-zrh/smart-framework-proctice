@@ -26,6 +26,7 @@ public class JumpPageCnotroller {
 	@Inject
 	private StudentDaoImpl studentDaoImpl ;
 	
+	//这里暂时必须要有Param 作为参数，不管是否需要
 	@Action("get:/JumpToIndexPage")
 	public View JumpToIndexPage(Param param) {
 		View view = new View("index.jsp");
